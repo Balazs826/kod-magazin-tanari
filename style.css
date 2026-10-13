@@ -158,6 +158,7 @@ p {
 .container {
   width: 800px;
   margin: 0 auto;
+  
 }
 
 nav {
@@ -215,4 +216,39 @@ h1::first-letter {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.author {
+  margin: 0;
+}
+
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight:normal;
+  font-style: italic;
+}
+
+.related-link:link {
+  font-size: 17px;
+
 }

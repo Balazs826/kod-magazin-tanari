@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <title>HTML cikk</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
   </head>
 
   <body>
     <div class="container">
+        <div class="row"></div>
       <header class="main-header">
         <h1>📘 Kód Magazin</h1>
         <nav>
@@ -21,9 +23,11 @@
         <header class="post-header">
           <h2>A web alapnyelve: HTML</h2>
           <img src="img/laura-jones.jpg" alt="Laura Jones portréja" class="author-img" />
-          <p class="author">
-            Közzétette: <strong>Laura Jones</strong>, 2027. június 21., hétfő
-          </p>
+          <div class="author-box">
+            <p class="author">
+              Közzétette: <strong>Laura Jones</strong>, 2027. június 21., hétfő
+            </p>
+          </div>
           <img
             src="img/post-img.jpg"
             alt="HTML-kód egy képernyőn"
@@ -41,7 +45,7 @@
         </p>
         <h3>Mi az a HTML?</h3>
         <p>
-          A <a href="#" class="formazott-hivatkozas">HTML a HyperText Markup Language</a> rövidítése. Ez egy jelölőnyelv,
+          A <a href="#" class="formazott-hivatkozas" >HTML a HyperText Markup Language</a> rövidítése. Ez egy jelölőnyelv,
           amelyet a webfejlesztők a weboldalak tartalmának strukturálására és
           leírására használnak (nem programozási nyelv).
         </p>
@@ -87,18 +91,18 @@
       <aside>
         <h4>Kapcsolódó bejegyzések</h4>
         <ul class="related">
-          <li>
+          <li class="related-post">
             <img src="img/related-1.jpg" alt="Programozó személy" /><a href="#"
               >Hogyan tanuljunk webfejlesztést</a
             >
             <p class="related-author">Szerző: Jonas Schmedtmann</p>
           </li>
-          <li>
+          <li class="related-post">
             <img src="img/related-2.jpg" alt="Villám" />
             <a href="#">A CSS ismeretlen ereje</a>
             <p class="related-author">Szerző: Jim Dillon</p>
           </li>
-          <li>
+          <li class="related-post">
             <img src="img/related-3.jpg" alt="JavaScript kód egy képernyőn" />
             <a href="#">Miér nagyszerű a JavaScript?</a>
             <p class="related-author">Szerző: Matilda</p>
